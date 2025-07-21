@@ -4,8 +4,17 @@
     background-image: url(/img/wall.png);
 }
 
+main{
+    background-image: url(/img/cork.png);
+}
+
 
 h1{
     font-size: 70px !important;
 }
 
+img{
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
