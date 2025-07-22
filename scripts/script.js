@@ -1,0 +1,1 @@
+img_and_description = document.getElementById("immagine-e-descrizione")
