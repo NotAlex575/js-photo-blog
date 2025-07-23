@@ -1,6 +1,8 @@
 const img_and_description = document.getElementById("immagine-e-descrizione");
 const img_and_button = document.getElementById("immagine-singola-e-pulsante");
+const immagine_grande = document.getElementById("immagine-grande");
 const button_image = document.getElementById("one-photo"); 
+
 
 inizializzazione_colonne();
 
@@ -20,6 +22,7 @@ function inizializzazione_colonne(){
         immagini_cliccabili.forEach(button => {
             button.addEventListener("click", function(){
                 img_and_button.classList.remove("d-none");
+                immagine_grande.innerHTML += `<img class="card-img-top" src="img/Harleq.jpg" alt=""></img>`
                 img_and_description.classList.add("d-none");
             });
         });
@@ -42,5 +45,6 @@ const generateCard = ({url}) => {
 //VISIBILITA IMMAGINE GRANDE SINGOLA
 button_image.addEventListener("click", function(){
     img_and_description.classList.remove("d-none");
+    immagine_grande.innerHTML = "";
     img_and_button.classList.add("d-none")
 })
